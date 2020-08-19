@@ -14,8 +14,9 @@ async def on_command_error(ctx, error):
 
 
 @bot.command()
-async def プリコネの年末年始は(ctx):
-    await ctx.send('ヤバイわよ！')
-
+if message.author.bot:
+    return
+if message.content == '/プリコネの年末年始は'
+await message.chnnel.send('ヤバイわよ！')
 
 bot.run(token)
